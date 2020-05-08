@@ -49,6 +49,7 @@ class Scraper
     biovalue = doc.css("p").text
     eachstudent[:bio] = biovalue
     end
+    binding.pry
   end
 
 end
