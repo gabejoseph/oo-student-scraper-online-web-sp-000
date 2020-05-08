@@ -18,17 +18,8 @@ class Scraper
     scraped_students
   end
 
-# :twitter=>
-# :linkedin=>
-# :github=>
-# :blog=>
-# :profile_quote=>"\"Reduce to a previously solved problem\"",
-# :bio=>
-
-
   def self.scrape_profile_page(profile_url)
     eachstudent = {}
-    studentarray = []
     doc = Nokogiri::HTML(open(profile_url))
     doc.css(".social-icon-container").css("a").each do |x|
       if x.attributes["href"].value.include?("twitter") 
