@@ -7,10 +7,8 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    student_hash.each do |x|
-      
-      binding.pry
-    end 
+
+    binding.pry
     @@all << self
   end
 
