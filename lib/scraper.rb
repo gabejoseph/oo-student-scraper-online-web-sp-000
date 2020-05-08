@@ -37,6 +37,7 @@ class Scraper
       elsif x.attributes["href"].value.include?("linkedin")
         linkedinvalue = x.attributes["href"].value
         eachstudent[:linkedin] = linkedinvalue
+        binding.pry
       elsif x.attributes["href"].value.include?("github")
         githubvalue = x.attributes["href"].value
         eachstudent[:github] = githubvalue
