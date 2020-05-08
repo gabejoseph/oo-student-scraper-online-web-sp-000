@@ -48,7 +48,6 @@ class Scraper
     eachstudent[:profile_quote] = quote
     biovalue = doc.css("p").text
     eachstudent[:bio] = biovalue
-    binding.pry
     end
   end
 
